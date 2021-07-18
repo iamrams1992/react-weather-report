@@ -1,5 +1,6 @@
 {
   "name": "react-weather-report",
+  "homepage": "https://iamrams1992.github.io/react-weather-report",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +16,8 @@
   },
   "proxy": "https://api.darksky.net",
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
